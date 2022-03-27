@@ -5,20 +5,20 @@
 class FinalCountdown < Formula
   desc ""
   homepage "https://github.com/wecraftforfun/homebrew-tools"
-  version "0.9.4"
+  version "0.9.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.4/final-countdown_0.9.4_Darwin_arm64.tar.gz"
-      sha256 "ae57944244df7892455935bff2ece12ace76b6d9711856c296e4983804a0c749"
+      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.6/final-countdown_0.9.6_Darwin_arm64.tar.gz"
+      sha256 "d4931794bbdffd3b4db5c98b32ae0440cfdec70c92f7f4fe826a7d8339113f5b"
 
       def install
         bin.install "final-countdown"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.4/final-countdown_0.9.4_Darwin_x86_64.tar.gz"
-      sha256 "27b845264081480bd0a17fe11f892cdc10876883f758eca6fb935c80e4471134"
+      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.6/final-countdown_0.9.6_Darwin_x86_64.tar.gz"
+      sha256 "32ebfd8789bf0304bfc0c674c964b89845e902d4150692e33e98b42414536174"
 
       def install
         bin.install "final-countdown"
@@ -27,17 +27,17 @@ class FinalCountdown < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.4/final-countdown_0.9.4_Linux_arm64.tar.gz"
-      sha256 "470879a9497193fcb9768b2ef2e2a4c36b05519de8a2d6e590c94884ba6a5a1e"
+    if Hardware::CPU.intel?
+      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.6/final-countdown_0.9.6_Linux_x86_64.tar.gz"
+      sha256 "940ef89ede8b68379eb64dc13b13618f590816a8b77608e7afdb2cb595c54e66"
 
       def install
         bin.install "final-countdown"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.4/final-countdown_0.9.4_Linux_x86_64.tar.gz"
-      sha256 "5303ae27d86db78159406011a2261189efa40df3d40afde151f61597d24643bb"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.6/final-countdown_0.9.6_Linux_arm64.tar.gz"
+      sha256 "519d239ace4e40b712ee52e3950ffd72df06737bcfa0073c2b9686ce5b2478cd"
 
       def install
         bin.install "final-countdown"
