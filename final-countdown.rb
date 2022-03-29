@@ -5,20 +5,20 @@
 class FinalCountdown < Formula
   desc ""
   homepage "https://github.com/wecraftforfun/homebrew-tools"
-  version "0.9.7"
+  version "0.9.8"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.7/final-countdown_0.9.7_Darwin_arm64.tar.gz"
-      sha256 "de1b2b689e54a1c53f5344b7fc889f122cc1b22f932a76e3b45e85a90aa1cd42"
+      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.8/final-countdown_0.9.8_Darwin_arm64.tar.gz"
+      sha256 "8d3b5c8f4af6ff0d2e1c47249fa15363e1fae19775c08bcd09b12733298da0ab"
 
       def install
         bin.install "final-countdown"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.7/final-countdown_0.9.7_Darwin_x86_64.tar.gz"
-      sha256 "0c4c56a299b51830ae6325b38f2c0c1397bc0c9657d5ac3e30e741b83c1fc881"
+      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.8/final-countdown_0.9.8_Darwin_x86_64.tar.gz"
+      sha256 "52ba08bb5ba51598cb433b0709dfd0dbfaa9e92f9f390bba8268e8416825c1e3"
 
       def install
         bin.install "final-countdown"
@@ -28,16 +28,16 @@ class FinalCountdown < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.7/final-countdown_0.9.7_Linux_arm64.tar.gz"
-      sha256 "4aefefb2a092cec8b3703308d28ee8b31ae0c54e307b90d5409a4a0f698b9fd9"
+      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.8/final-countdown_0.9.8_Linux_arm64.tar.gz"
+      sha256 "5f65bb05177e7051e4704c55e353c64d0e7d47d43cbbcab0fe6a3121288cdfcf"
 
       def install
         bin.install "final-countdown"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.7/final-countdown_0.9.7_Linux_x86_64.tar.gz"
-      sha256 "2768543f1d7d96f92fb86f789b0530ec9f97656a1b94725fdcdd806e66d2a227"
+      url "https://github.com/wecraftforfun/final-countdown/releases/download/v0.9.8/final-countdown_0.9.8_Linux_x86_64.tar.gz"
+      sha256 "569661ca901c254a44e66735a96d15172777b706bdf45523daa1d1c7f19d75f1"
 
       def install
         bin.install "final-countdown"
